@@ -7,7 +7,7 @@
 
 body{
 
-    background: #f6f9ff;
+    background: #bfbfc4;
     height: 100vh;
     width: 100%;
 
@@ -22,4 +22,63 @@ body{
 main.cards{
     display: flex;
     padding: 32px;
+}
+
+main.cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img{
+    width: 100%;
+}
+
+main.cards section.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    color: white;
+}
+
+main.cards section.card.contact button{
+    background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+
+main.cards section.card.shop button{
+    background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+
+main.cards section.card.about button{
+    background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+
+main.cards section.card.contact{
+    box-shadow: 20px 20px 50px -30px #8c49f7;
+}
+
+main.cards section.card.shop{
+    box-shadow: 20px 20px 50px -30px #262af3;
+}
+
+main.cards section.card.about{
+    box-shadow: 20px 20px 50px -30px #fa2720;
 }
