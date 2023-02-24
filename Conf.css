@@ -49,6 +49,18 @@ main.cards section.card img{
     width: 100%;
 }
 
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+main.cards section.card span{
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
 main.cards section.card button{
     padding: 0.5rem 1rem;
     text-transform: uppercase;
@@ -81,4 +93,19 @@ main.cards section.card.shop{
 
 main.cards section.card.about{
     box-shadow: 20px 20px 50px -30px #fa2720;
+}
+
+@media sreen and (max-width: 720px){
+    main.cards{
+        flex-direction: column;
+    }
+
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child{
+        margin-bottom: 0;
+    }
 }
